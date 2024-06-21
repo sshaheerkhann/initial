@@ -8,9 +8,8 @@ function submitData() {
     passwordChecker(pass, conf_pass, errors);
     contactChecker(contact, errors);
     emailChecker(email, errors);
-    alert(errors)
-    
-    debugger;
+    if(errors.length){alert(errors);}
+    else {alert('Successful');}
 
 }
 
